@@ -24,3 +24,9 @@ controller.hears(["Hello","Hi"],["direct_message","direct_mention","mention","am
       bot.reply(message,'Hello, how are you today?');
 
 });
+
+controller.hears(["메뉴","회식"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
+
+      bot.reply(message,'회식메뉴는 정했나요?');
+
+});
